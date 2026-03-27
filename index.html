@@ -7,110 +7,29 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #e9f1ff;
-      color: #2c3e50;
+      background: linear-gradient(to bottom, #eef5ff, #ffffff);
+      color: #2f3e55;
     }
 
     .container {
-      padding: 20px;
       max-width: 900px;
       margin: auto;
+      padding: 30px 20px;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 20px;
-      color: #3b5b8a;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: #3a5a8a;
+      letter-spacing: 1px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
     }
 
-    .box {
-      background: white;
-      border-radius: 20px;
-      padding: 20px;
-      height: 120px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .box:hover {
-      transform: scale(1.03);
-      background: #dbe7ff;
-    }
-
-    .denim {
-      background: #3b5b8a;
-      color: white;
-    }
-
-    .small {
-      height: 80px;
-    }
-
-    .wide {
-      grid-column: span 2;
-    }
-
-  </style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-  <h1>💙</h1>
-
-  <div class="grid">
-
-    <div class="box denim" onclick="page1()">• • •</div>
-    <div class="box small" onclick="page2()">• • •</div>
-    <div class="box" onclick="page3()">• • •</div>
-    <div class="box wide" onclick="page4()">• • •</div>
-    <div class="box small" onclick="page5()">• • •</div>
-    <div class="box denim" onclick="page6()">• • •</div>
-
-  </div>
-
-</div>
-
-<script>
-
-function page1() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-function page2() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-function page3() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-function page4() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-function page5() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-function page6() {
-  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
-}
-
-</script>
-
-</body>
-</html>
+    .card {
+      background:
