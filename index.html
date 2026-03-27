@@ -1,22 +1,98 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>💙</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #eaf4ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      width: 80%;
+      max-width: 320px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #3a4a5a;
+    }
+
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      width: 80%;
+      border: none;
+      border-radius: 20px;
+      background: #dbeafe;
+      color: #2c3e50;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #c7ddff;
+    }
+  </style>
+
 </head>
 
 <body>
-  
-</body>
 
-</html><!DOCTYPE html>
-<html>
-<head>
-  <title>Loading...</title>
-</head>
+<div class="card">
+  <h1>• • •</h1>
+  <button class="btn" onclick="next()">→</button>
+</div>
 
-<body>
+<script>
+
+function next() {
+  document.body.innerHTML = `
+    <div class="card">
+      <button class="btn" onclick="page1()">💌</button>
+      <button class="btn" onclick="page2()">📸</button>
+      <button class="btn" onclick="page3()">🎁</button>
+    </div>
+  `;
+}
+
+function page1() {
+  document.body.innerHTML = `
+    <div class="card">
+      <h1>• • •</h1>
+    </div>
+  `;
+}
+
+function page2() {
+  document.body.innerHTML = `
+    <div class="card">
+      <h1>• • •</h1>
+    </div>
+  `;
+}
+
+function page3() {
+  document.body.innerHTML = `
+    <div class="card">
+      <h1>• • •</h1>
+    </div>
+  `;
+}
+
+</script>
+
 </body>
-</html>
+  </html>
