@@ -7,92 +7,110 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #eaf4ff, #ffffff);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background: #e9f1ff;
+      color: #2c3e50;
     }
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 25px;
-      width: 80%;
-      max-width: 320px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     h1 {
-      margin-bottom: 10px;
-      color: #3a4a5a;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3b5b8a;
     }
 
-    .btn {
-      display: block;
-      margin: 10px auto;
-      padding: 12px;
-      width: 80%;
-      border: none;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .box {
+      background: white;
       border-radius: 20px;
-      background: #dbeafe;
-      color: #2c3e50;
+      padding: 20px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
       cursor: pointer;
+      transition: 0.2s;
     }
 
-    .btn:hover {
-      background: #c7ddff;
+    .box:hover {
+      transform: scale(1.03);
+      background: #dbe7ff;
     }
+
+    .denim {
+      background: #3b5b8a;
+      color: white;
+    }
+
+    .small {
+      height: 80px;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
   </style>
 
 </head>
 
 <body>
 
-<div class="card">
-  <h1>• • •</h1>
-  <button class="btn" onclick="next()">→</button>
+<div class="container">
+
+  <h1>💙</h1>
+
+  <div class="grid">
+
+    <div class="box denim" onclick="page1()">• • •</div>
+    <div class="box small" onclick="page2()">• • •</div>
+    <div class="box" onclick="page3()">• • •</div>
+    <div class="box wide" onclick="page4()">• • •</div>
+    <div class="box small" onclick="page5()">• • •</div>
+    <div class="box denim" onclick="page6()">• • •</div>
+
+  </div>
+
 </div>
 
 <script>
 
-function next() {
-  document.body.innerHTML = `
-    <div class="card">
-      <button class="btn" onclick="page1()">💌</button>
-      <button class="btn" onclick="page2()">📸</button>
-      <button class="btn" onclick="page3()">🎁</button>
-    </div>
-  `;
-}
-
 function page1() {
-  document.body.innerHTML = `
-    <div class="card">
-      <h1>• • •</h1>
-    </div>
-  `;
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
 }
 
 function page2() {
-  document.body.innerHTML = `
-    <div class="card">
-      <h1>• • •</h1>
-    </div>
-  `;
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
 }
 
 function page3() {
-  document.body.innerHTML = `
-    <div class="card">
-      <h1>• • •</h1>
-    </div>
-  `;
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
+}
+
+function page4() {
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
+}
+
+function page5() {
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
+}
+
+function page6() {
+  document.body.innerHTML = `<div class="container"><h1>• • •</h1></div>`;
 }
 
 </script>
 
 </body>
-  </html>
+</html>
