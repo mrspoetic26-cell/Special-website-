@@ -7,29 +7,74 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #eef5ff, #ffffff);
-      color: #2f3e55;
+      background-image: url('bg1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
       padding: 30px 20px;
     }
 
+    .section {
+      background: rgba(255,255,255,0.85);
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .frame {
+      background-image: url('bg4.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 280px;
+      border-radius: 20px;
+    }
+
     h1 {
       text-align: center;
-      font-weight: 500;
-      margin-bottom: 30px;
-      color: #3a5a8a;
-      letter-spacing: 1px;
+      color: #2f4f7f;
+      margin-bottom: 20px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
+  </style>
 
-    .card {
-      background:
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>💙</h1>
+
+  <div class="section">
+    • • •
+  </div>
+
+  <div class="frame"></div>
+
+  <div class="section">
+    <img src="bg2.jpg" class="image">
+  </div>
+
+  <div class="section">
+    • • •
+  </div>
+
+  <div class="section">
+    <img src="bg3.jpg" class="image">
+  </div>
+
+</div>
+
+</body>
+</html>
